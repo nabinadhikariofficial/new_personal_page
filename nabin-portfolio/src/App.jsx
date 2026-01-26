@@ -53,7 +53,7 @@ function NavBar() {
           Nabin Adhikari
         </span>
         <span className="text-sm text-slate-500">
-          Blacksburg, VA · United States
+          Blacksburg, VA
         </span>
       </div>
     </nav>
@@ -145,7 +145,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="px-6 py-2 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700"
             >
-              View CV
+              Resume
             </a>
           </div>
         </div>
@@ -407,9 +407,44 @@ function Project({ title, link, children }) {
       whileHover={{ scale: 1.02 }}
       href={link}
       target="_blank"
-      className="block bg-white p-6 rounded-xl shadow-sm"
+      rel="noopener noreferrer"
+      className="relative block bg-white p-6 rounded-xl shadow-sm"
     >
-      <h3 className="font-semibold text-xl mb-2 text-slate-900">
+      {/* GitHub Icon */}
+      <span
+        className="absolute top-5 right-5 text-slate-500 hover:text-slate-900"
+        aria-label="GitHub Repository"
+      >
+        <svg
+          className="w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.58
+            0-.287-.011-1.244-.016-2.253-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
+            -1.089-.745.083-.729.083-.729 1.205.085 1.84 1.238 1.84 1.238
+            1.07 1.835 2.807 1.305 3.492.998.108-.775.418-1.305.76-1.605
+            -2.665-.304-5.467-1.334-5.467-5.933 0-1.31.468-2.381 1.235-3.222
+            -.124-.303-.535-1.523.117-3.176 0 0 1.008-.323 3.3 1.23
+            a11.51 11.51 0 013.003-.404c1.018.004 2.043.138 3.003.404
+            2.29-1.553 3.296-1.23 3.296-1.23
+            .655 1.653.244 2.873.12 3.176
+            .77.841 1.234 1.912 1.234 3.222
+            0 4.61-2.807 5.625-5.479 5.922
+            .43.371.814 1.102.814 2.222
+            0 1.605-.014 2.898-.014 3.293
+            0 .321.218.696.825.578
+            C20.565 21.796 24 17.303 24 12
+            c0-6.627-5.373-12-12-12z"
+          />
+        </svg>
+      </span>
+
+      {/* EXISTING CONTENT — UNCHANGED */}
+      <h3 className="font-semibold text-xl mb-2 text-slate-900 pr-8">
         {title}
       </h3>
       <p className="text-slate-600">{children}</p>
@@ -417,14 +452,15 @@ function Project({ title, link, children }) {
   );
 }
 
+
+
 /* =========================
    FOOTER
 ========================= */
 function Footer() {
   return (
     <footer className="text-center text-slate-500 py-12">
-      © 2026 Nabin Adhikari · Machine Learning Engineer · Built for
-      real-world impact
+      © 2026 Nabin Adhikari · Machine Learning Engineer
     </footer>
   );
 }
