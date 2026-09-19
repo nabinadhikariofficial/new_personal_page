@@ -140,7 +140,7 @@ function Hero() {
 
             {/* View CV Button */}
             <a
-              href="/CV_Nabin_Adhikari_One_Page.pdf"
+              href="/Nabin_Adhikari_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700"
