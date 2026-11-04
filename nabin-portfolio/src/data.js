@@ -23,7 +23,6 @@ export const profile = {
 };
 
 export const stats = [
-  { value: 4.0, decimals: 1, suffix: "/4.0", label: "Graduate GPA" },
   { value: 22, prefix: "−", suffix: "%", label: "Unseen prompt-attack exposure" },
   { value: 0.686, decimals: 3, prefix: "R² ", label: "Tree-canopy correction" },
   { value: 270, suffix: "+", label: "AI-assisted patent briefs" },
@@ -182,7 +181,7 @@ export const education = [
     degree: "M.S., Computer Engineering",
     school: "Virginia Tech",
     period: "Jan 2025 – Dec 2026",
-    note: "GPA 4.0/4.0 · Advanced ML, Foundation Models to AI Agents, Deep Learning, Trustworthy ML, Algorithms for Big Data, Nonlinearity & Predictability.",
+    note: "Advanced ML, Foundation Models to AI Agents, Deep Learning, Trustworthy ML, Algorithms for Big Data, Nonlinearity & Predictability.",
   },
 ];
 

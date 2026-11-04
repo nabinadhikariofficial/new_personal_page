@@ -168,7 +168,7 @@ kbd {
 @keyframes blink { 50% { opacity: 0; } }
 
 /* ============ stats ============ */
-.stats { display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; position: relative; z-index: 1; margin-top: -24px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; position: relative; z-index: 1; margin-top: -24px; }
 .stats li { padding: 22px 20px; border-left: 1px solid var(--line); display: grid; gap: 4px; }
 .stats li:first-child { border-left: 0; }
 .stats b { font-size: clamp(22px, 2.4vw, 28px); font-weight: 500; letter-spacing: -0.02em; color: var(--text); }
@@ -283,9 +283,9 @@ kbd {
   .hero__inner { grid-template-columns: 1fr; gap: 40px; }
   .hero__side { justify-items: start; grid-template-columns: auto 1fr; align-items: center; }
   .portrait { margin-left: 0; width: 160px; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
-  .stats li:nth-child(4) { border-left: 0; }
-  .stats li:nth-child(n + 4) { border-top: 1px solid var(--line); }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats li:nth-child(3) { border-left: 0; }
+  .stats li:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .about { padding-left: 0; gap: 40px; }
   .projects { grid-template-columns: repeat(2, 1fr); }
 }
@@ -312,11 +312,7 @@ kbd {
   .portrait { display: none; }
   .code-card pre { font-size: 11px; min-height: 0; }
   .hero__hint { display: none; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
-  .stats li { border-left: 0 !important; border-top: 1px solid var(--line); }
-  .stats li:nth-child(-n + 2) { border-top: 0; }
-  .stats li:nth-child(even) { border-left: 1px solid var(--line) !important; }
-  .stats li:last-child { grid-column: 1 / -1; border-left: 0 !important; }
+  .stats li { padding: 18px 16px; }
   .projects { grid-template-columns: 1fr; }
   .feature, .interest { padding: 22px; }
   .contact__row .btn { width: 100%; justify-content: center; }
