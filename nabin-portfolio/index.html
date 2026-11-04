@@ -1,17 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nabin Adhikari — Ph.D. Student, Computer Science @ Virginia Tech</title>
+    <meta
+      name="description"
+      content="Nabin Adhikari is a Ph.D. student in Computer Science at Virginia Tech working on trustworthy ML, LLM security, foundation models and geospatial deep learning."
+    />
+    <meta name="author" content="Nabin Adhikari" />
+    <meta name="theme-color" content="#0a0b0e" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nabin Adhikari | ML Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nabin Adhikari — Ph.D. Student, Computer Science @ Virginia Tech" />
+    <meta property="og:description" content="Trustworthy ML, LLM security, foundation models and geospatial deep learning at Virginia Tech." />
+    <meta property="og:image" content="/Nabin_Adhikari.webp" />
+    <meta name="twitter:card" content="summary" />
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nabin Adhikari",
+        "jobTitle": "Ph.D. Student, Computer Science",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "Virginia Tech" },
+        "email": "mailto:nabinadhikari@vt.edu",
+        "sameAs": [
+          "https://github.com/nabinadhikariofficial",
+          "https://www.linkedin.com/in/nabinadhikariofficial/"
+        ],
+        "knowsAbout": ["Machine Learning", "Trustworthy ML", "LLM Security", "Deep Learning", "Geospatial AI"]
+      }
+    </script>
 
+    <!-- Apply the saved theme before first paint to avoid a flash. -->
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
